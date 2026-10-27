@@ -16,17 +16,28 @@
 #
 # ##### END GPL LICENSE BLOCK #####
 
-
 bl_info = {
-    "name": "Node Tabber (Development)",
-    "author": "Richard Lyons, williamchange, Quackers",
-    "blender": (3, 4, 0),
-    "version": (0, 3, 7),
-    "description": "Allows quick smart searching of node types.",
-    "category": "Node",
+    "name" : "Node Tabber",
+    "author" : "Richard Lyons, williamchange, Quackers",
+    "blender" : (5, 0, 0),
+    "version" : (0, 4, 0),
+    "description" : "Allows quick smart searching of node types.",
+    "category" : "Node",
 }
 
-from .source import register, unregister
+from . import operators, keymaps, prefs
+modules = (operators, keymaps, prefs)
+
+
+def register():
+    for module in modules:
+        module.register()
+
+
+def unregister():
+    for module in reversed(modules):
+        module.unregister()
+
 
 if __name__ == "__main__":
     register()

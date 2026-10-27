@@ -1,0 +1,108 @@
+{
+  "blender": "5.2.3 LTS",
+  "summary": [
+    {
+      "tree": "GeometryNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 1367,
+      "created": 1367
+    },
+    {
+      "tree": "ShaderNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 381,
+      "created": 381
+    },
+    {
+      "tree": "CompositorNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 566,
+      "created": 566
+    },
+    {
+      "tree": "TextureNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 103,
+      "created": 103
+    },
+    {
+      "tree": "GeometryNodeTree",
+      "subtype": "TOOL",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 1387,
+      "created": 1387
+    },
+    {
+      "tree": "ShaderNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "WORLD",
+      "engine": "CYCLES",
+      "entries": 343,
+      "created": 343
+    },
+    {
+      "tree": "ShaderNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "BLENDER_EEVEE",
+      "entries": 373,
+      "created": 373
+    },
+    {
+      "tree": "ShaderNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "LINESTYLE",
+      "engine": "CYCLES",
+      "entries": 343,
+      "created": 343
+    },
+    {
+      "tree": "GeometryNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 358,
+      "created": 358
+    },
+    {
+      "tree": "ShaderNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 112,
+      "created": 112
+    },
+    {
+      "tree": "CompositorNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 174,
+      "created": 174
+    },
+    {
+      "tree": "TextureNodeTree",
+      "subtype": "MODIFIER",
+      "shader": "OBJECT",
+      "engine": "CYCLES",
+      "entries": 38,
+      "created": 38
+    }
+  ],
+  "native_coverage": {
+    "GeometryNodeTree": 354,
+    "ShaderNodeTree": 113,
+    "CompositorNodeTree": 166,
+    "TextureNodeTree": 37
+  },
+  "failures": []
+}

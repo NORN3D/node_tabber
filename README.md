@@ -1,16 +1,29 @@
-# node_tabber
+# Node Tabber 0.4.0
 
-Node Tabber is a Houdini/Nuke style node adding tool for Blender's Node tree graphs; namely the Shader, Compositing, Texture and Geometry.
+Blender 5.2 compatibility update. Press **Tab** in a node editor to search for
+nodes, their operations, and local node groups. **Ctrl+Tab** edits a node group.
 
-Instead of having to press SHIFT+A and then scrolling the sub menus to find the correct node, or even clicking on the search menu and maybe getting the correct node; you can just press the TAB button which will bring up an intelligent search list which even supports node acronyms. For example, typing SX would bring up the Seperate XYZ node.
-This saves a lot of time when working with large node trees.
+## Install
 
-## Installation (Blender 5.2+)
+In Blender, open **Edit > Preferences > Add-ons**, choose **Install from Disk**
+from the menu, select `NodeTabber-0.4.0-Blender5.2.zip`, and enable **Node Tabber**.
+Disable an older installed copy first to avoid duplicate Tab bindings.
 
-Download the latest version from the [Releases Page](https://github.com/NORN3D/node_tabber/releases) and install from Blender's preferences, just like any other add-on (no need to unzip)
+## Compatibility
 
-> **NOTE**: If you are a regular user, DO NOT go to `'<> Code' > 'Download as ZIP'` to download a copy of the addon. This gives you a development version of the addon which is larger in size and offers no advantage over the release versions outside of development.
+The 5.2 catalogs were generated and tested with Blender **5.2.3 LTS**.
+They cover every creatable built-in node type in Geometry, 
+Shader, Compositor, and legacy Texture node trees. Simulation, Repeat,
+For Each Geometry Element, and Closure entries create paired zone endpoints.
+Node groups have separate entries with recursive groups excluded.
 
-# Fork
+The catalogs preserve context filters for shader engines, world/object/line-style
+shaders, and geometry node tools. They add new 5.2 nodes, including the XPBD
+Solver, mesh bevel, list operations, and compositor additions. RNA enum values
+that are unavailable on an actual node are filtered using temporary nodes in a
+disposable tree; these results are cached for subsequent searches.
 
-This is a maintained fork for Blender 5.2+
+Search preferences, operation symbols, Mix Color/Mix RGB aliases, deprecated
+node display, and usage sorting remain available. Usage tallies are saved in
+Blender's user configuration folder under `node_tabber/tally_cache`. Existing
+installation-folder tallies are read until superseded by a user-config tally.

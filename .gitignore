@@ -1,6 +1,0 @@
-.DS_Store
-/scripts
-**/__pycache__/
-**.prof
-/source/**/*.json
-!/source/nodelists/**/*.json
